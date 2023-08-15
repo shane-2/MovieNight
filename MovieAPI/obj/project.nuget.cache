@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DY9ySofgPKomjoh+NJW/6qVB8fzWQl+LY59piBzxJoQYft4gcTfM+7S1XyXHO0GGBshFKw1ihk2YbLEZmcM0Mw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shane\\source\\repos\\MovieAPI\\MovieAPI\\MovieAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shane\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
