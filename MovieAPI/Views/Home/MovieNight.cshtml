@@ -1,4 +1,6 @@
 ﻿@model List<MovieModel>
+<body style="background-image: url('https://www.courier-journal.com/gcdn/presto/2019/04/02/PLOU/febba588-ff5b-4277-b600-c4c76252c317-MotleyFool-TMOT-1c387926-06ba00e6.jpg?crop=2094,1185,x0,y0&width=1600&height=800&format=pjpg&auto=webp'); background-size:cover">
+     <div style="color: white" class="text-center; border border-secondary-subtle">
 @{
     if(Model != null)
     {
@@ -12,10 +14,11 @@
         }
     }
 }
-
+</div>
 
 
 <form asp-method="post" asp-action="MovieNightResults">
+                <div style="color: white" class="text-center; border border-secondary-subtle">
     <p>Enter the Movie title here</p>
     <input type="text" name="title1" />
     <p>Enter the Movie title here</p>
@@ -23,5 +26,6 @@
     <p>Enter the Movie title here</p>
     <input type="text" name="title3" />
     <input type="submit" />
-
+    </div>
 </form>
+</body>

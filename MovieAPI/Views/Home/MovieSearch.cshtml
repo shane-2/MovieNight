@@ -1,22 +1,40 @@
 ﻿@model MovieModel
-@{
-}
+<body style="background-image: url('https://www.courier-journal.com/gcdn/presto/2019/04/02/PLOU/febba588-ff5b-4277-b600-c4c76252c317-MotleyFool-TMOT-1c387926-06ba00e6.jpg?crop=2094,1185,x0,y0&width=1600&height=800&format=pjpg&auto=webp'); background-size:cover">
 @{
     if (Model != null)
     {
-        
-   
+
+            <div style="color: white" class="text-center; border border-secondary-subtle">
         <h1>@Model.Title</h1>
         <h2>Genre: @Model.Genre</h2>
         <p>Rating: @Model.imdbRating</p>
         <p>Actors: @Model.Actors </p>
     <img src="@Model.Poster" ></img>
+    </div>
+
+    //basic styling with bootstrap-----------------------------------
+        //<div class="card mb-3" style="max-width: 540px;">
+        //    <div class="row g-0">
+        //        <div class="col-md-4">
+        //            <img src="@Model.Poster" class="img-fluid rounded-start">
+        //        </div>
+        //        <div class="col-md-8">
+        //            <div class="card-body">
+        //                <h5 class="card-title">@Model.Title</h5>
+        //                <p class="card-text">@Model.Plot</p>
+        //            </div>
+        //        </div>
+        //    </div>
+        //</div>
+    
+
     }
 }
 <form asp-method="post" asp-action="MovieSearchResults">
-    <p>Enter the Movie title here</p>
+        <p style="color: white" class="text-center">Enter the Movie title here</p>
     <input type="text" name="Title" />
     <input type="submit" />
 
 </form>
 
+</body>
